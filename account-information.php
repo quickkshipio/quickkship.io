@@ -49,7 +49,7 @@ $userArray = mysqli_fetch_array($getUser);
     jQuery('#userEmail').change(function(){
 		var email = jQuery(this).val();
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: {reason: 'check_email_profile', email: email},
 			success: function (response) {
@@ -76,7 +76,7 @@ $userArray = mysqli_fetch_array($getUser);
 		var formData = new FormData(this);
 		formData.append("reason", "update_user");
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: formData,
 			success: function (response) {
@@ -84,7 +84,7 @@ $userArray = mysqli_fetch_array($getUser);
 					swal("Profile Updated!","Your new details are updated successfully.", "success")
 					.then(function(isConfirm) {
 						if(isConfirm) {
-							window.open('https://tracking.quickkship.com/account-information', '_SELF');
+							window.open('https://quickkship.com/account-information', '_SELF');
 						}
 					});
 				}
