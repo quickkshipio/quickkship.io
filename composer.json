@@ -1,0 +1,7 @@
+{
+    "require": {
+        "stripe/stripe-php": "^14.4",
+        "sonata-project/google-authenticator": "^2.3",
+        "dompdf/dompdf": "^2.0"
+    }
+}
