@@ -119,7 +119,7 @@ $userArray = mysqli_fetch_array($getUser);
                             </div>
                         </div>
                     </div>
-                    <a href="https://tracking.quickkship.com/packages" class="changeplanbtn">Change Your Plan</a>
+                    <a href="https://quickkship.com/packages" class="changeplanbtn">Change Your Plan</a>
                 </div>
                 <?php
                 }
