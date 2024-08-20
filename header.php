@@ -63,19 +63,19 @@
               <ul class="nav">
                 <li class="active"> <a href="index.html", style="color:black ;">Home</a></li>
                 <li> <a href="https://quickkship.com/about.html"  style="color: black;">About</a></li>
-                <li> <a href="https://tracking.quickkship.com/"  style="color:  black">Tracking</a></li>
-                <li> <a href="https://tracking.quickkship.com/packages"  style="color:  black">Packages</a></li>
+                <li> <a href="https://quickkship.com/tracking"  style="color:  black">Tracking</a></li>
+                <li> <a href="https://quickkship.com/packages"  style="color:  black">Packages</a></li>
                 <li> <a href="https://quickkship.com/contact.html"  style="color: black;">Contact</a></li>
                 <?php
                 if(empty($_SESSION)) {
                 ?>
-                <li> <a href="https://tracking.quickkship.com/login"  style="color: black;">Login</a></li>
-                <li> <a href="https://tracking.quickkship.com/register"  style="color: black;">Register</a></li>
+                <li> <a href="https://quickkship.com/login"  style="color: black;">Login</a></li>
+                <li> <a href="https://quickkship.com/register"  style="color: black;">Register</a></li>
                 <?php
                 }
                 else {
                 ?>
-                <li> <a href="https://tracking.quickkship.com/dashboard"  style="color: black;">Dashboard</a></li>
+                <li> <a href="https://quickkship.com/dashboard"  style="color: black;">Dashboard</a></li>
                 <?php
                 }
                 ?>
