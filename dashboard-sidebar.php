@@ -1,4 +1,4 @@
-<ul class="dashboard_sidebar">
+te<ul class="dashboard_sidebar">
     <li class="<?php if($pgTitle == 'Dashboard | '){echo 'active';} ?>">
         <a href="/dashboard">Dashboard</a>
     </li>
@@ -8,7 +8,7 @@
     <li class="<?php if($pgTitle == 'Account Information | '){echo 'active';} ?>">
         <a href="/account-information">Account Information</a>
     </li>
-    <li class="<?php if($pgTitle == 'Shipments | '){echo 'active';} ?>">
+    <li class="<?php if($pgTitle == 'Create/View Shipments | '){echo 'active';} ?>">
         <a href="/shipments">Shipment History</a>
     </li>
     <li class="<?php if($pgTitle == 'Settings and Preferences | '){echo 'active';} ?>">
