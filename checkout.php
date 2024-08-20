@@ -165,7 +165,7 @@ if($packageType == 'premium') {
 			formData.append("OrderID", OrderID);
 			
 			$.ajax({
-				url: 'https://tracking.quickkship.com/payment.php',
+				url: 'https://quickkship.com/payment.php',
 				type: 'POST',
 				data: formData,
 				success: function (response) {
@@ -178,7 +178,7 @@ if($packageType == 'premium') {
 						  title: response.message,
 						  text: "You have successfully subscribed to "+packageName+".",
 						}).then((result) => {
-						  window.open('https://tracking.quickkship.com/subscriptions', '_SELF');
+						  window.open('https://quickkship.com/subscriptions', '_SELF');
 						})
 					} else {
 						Swal.fire({
