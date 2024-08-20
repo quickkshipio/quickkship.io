@@ -53,7 +53,7 @@ $userArray = mysqli_fetch_array($getUser);
 		var formData = new FormData(this);
 		formData.append("reason", "add_feedback");
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: formData,
 			success: function (response) {
@@ -61,7 +61,7 @@ $userArray = mysqli_fetch_array($getUser);
 					swal("Feedback Submitted!","Your feedback have been emailed successfully.", "success")
 					.then(function(isConfirm) {
 						if(isConfirm) {
-							window.open('https://tracking.quickkship.com/feedback-and-surveys', '_SELF');
+							window.open('https://quickkship.com/feedback-and-surveys', '_SELF');
 						}
 					});
 				}
