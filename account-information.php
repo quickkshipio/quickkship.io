@@ -4,7 +4,7 @@ $pgTitle = "Account Information | ";
 include('header.php'); 
 $userEmail = $_SESSION['email'];
 if(empty($userEmail)) {
-    echo "<script>window.open('https://tracking.quickkship.com/login.php', '_SELF');</script>";
+    echo "<script>window.open('https://quickkship.com/login.php', '_SELF');</script>";
 }
 $getUser = mysqli_query($conn,'SELECT * FROM auth WHERE email = "'.$userEmail.'"');
 $userArray = mysqli_fetch_array($getUser);

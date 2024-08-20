@@ -3,7 +3,7 @@ include('connection.php');
 $pgTitle = "Login | ";
 include('header.php'); 
 if(!empty($_SESSION)) {
-    echo "<script>window.open('https://tracking.quickkship.com/dashboard', '_SELF');</script>";
+    echo "<script>window.open('https://quickkship.com/login.php', '_SELF');</script>";
 }
 ?>
 <div class="auth_section">
@@ -36,7 +36,7 @@ if(!empty($_SESSION)) {
 		var formData = new FormData(this);
 		formData.append("reason", "login_user");
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: formData,
 			success: function (response) {
@@ -44,7 +44,7 @@ if(!empty($_SESSION)) {
 					swal("Login Successful!","You will be redirected to your profile.", "success")
 					.then(function(isConfirm) {
 						if(isConfirm) {
-							window.open('https://tracking.quickkship.com/dashboard', '_SELF');
+							window.open('https://quickkship.com/dashboard', '_SELF');
 						}
 					});
 				} else {

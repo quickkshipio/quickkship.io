@@ -5,7 +5,7 @@ include('header.php');
 $user_id = $_SESSION['id'];
 $userEmail = $_SESSION['email'];
 if(empty($userEmail)) {
-    echo "<script>window.open('https://tracking.quickkship.com/login', '_SELF');</script>";
+    echo "<script>window.open('https://quickkship.com/login.php', '_SELF');</script>";
 }
 
 $getUser = mysqli_query($conn,'SELECT * FROM auth WHERE email = "'.$userEmail.'"');

@@ -65,7 +65,7 @@ jQuery(document).ready(function() {
     jQuery('#userEmail').change(function(){
 		var email = jQuery(this).val();
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: {reason: 'check_email', email: email},
 			success: function (response) {

@@ -10,7 +10,8 @@ $pgTitle = "Security | ";
 include('header.php'); 
 $userEmail = $_SESSION['email'];
 if(empty($userEmail)) {
-    echo "<script>window.open('https://tracking.quickkship.com/login.php', '_SELF');</script>";
+	echo "<script>window.open('https://quickkship.com/login.php', '_SELF');</script>";
+
 }
 $getUser = mysqli_query($conn,'SELECT * FROM auth WHERE email = "'.$userEmail.'"');
 $userArray = mysqli_fetch_array($getUser);
@@ -89,7 +90,7 @@ $secret = $g->generateSecret();
     jQuery('#userEmail').change(function(){
 		var email = jQuery(this).val();
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: {reason: 'check_email_profile', email: email},
 			success: function (response) {
@@ -116,7 +117,7 @@ $secret = $g->generateSecret();
 		var formData = new FormData(this);
 		formData.append("reason", "update_user");
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: formData,
 			success: function (response) {
@@ -124,7 +125,7 @@ $secret = $g->generateSecret();
 					swal("Profile Updated!","Your new details are updated successfully.", "success")
 					.then(function(isConfirm) {
 						if(isConfirm) {
-							window.open('https://tracking.quickkship.com/account-information', '_SELF');
+							window.open('https://quickkship.com/account-information', '_SELF');
 						}
 					});
 				}
