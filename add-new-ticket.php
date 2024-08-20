@@ -58,7 +58,7 @@ $userArray = mysqli_fetch_array($getUser);
 		var formData = new FormData(this);
 		formData.append("reason", "add_new_ticket");
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: formData,
 			success: function (response) {
@@ -66,7 +66,7 @@ $userArray = mysqli_fetch_array($getUser);
 					swal("Ticket Submitted!","Your ticket have been submitted successfully.", "success")
 					.then(function(isConfirm) {
 						if(isConfirm) {
-							window.open('https://tracking.quickkship.com/support-and-help', '_SELF');
+							window.open('https://quickkship.com/support-and-help', '_SELF');
 						}
 					});
 				}
