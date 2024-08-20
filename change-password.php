@@ -70,7 +70,7 @@ jQuery(document).ready(function() {
     jQuery('#oldPassword').change(function(){
 		var oldPass = jQuery(this).val();
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: {reason: 'check_old_pass', oldPass: oldPass},
 			success: function (response) {
@@ -91,7 +91,7 @@ jQuery(document).ready(function() {
 		var formData = new FormData(this);
 		formData.append("reason", "update_password");
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: formData,
 			success: function (response) {
@@ -99,7 +99,7 @@ jQuery(document).ready(function() {
 					swal("Password Updated!","You will be logged out now. Login again with new password.", "success")
 					.then(function(isConfirm) {
 						if(isConfirm) {
-							window.open('https://tracking.quickkship.com/logout.php', '_SELF');
+							window.open('https://quickkship.com/logout.php', '_SELF');
 						}
 					});
 				}
