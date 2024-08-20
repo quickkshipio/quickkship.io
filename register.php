@@ -92,7 +92,7 @@ jQuery(document).ready(function() {
 		var formData = new FormData(this);
 		formData.append("reason", "register_user");
 		jQuery.ajax({
-			url: 'https://tracking.quickkship.com/actions/ajax.php',
+			url: 'https://quickkship.com/actions/ajax.php',
 			type: 'POST',
 			data: formData,
 			success: function (response) {
@@ -100,7 +100,7 @@ jQuery(document).ready(function() {
 					swal("Registration Successful!","Now you can login to your profile.", "success")
 					.then(function(isConfirm) {
 						if(isConfirm) {
-							window.open('https://tracking.quickkship.com/login', '_SELF');
+							window.open('https://quickkship.com/login', '_SELF');
 						}
 					});
 				}
