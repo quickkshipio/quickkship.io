@@ -102,7 +102,7 @@ getDocs(q)
       const actions = document.createElement("p");
       actions.classList.add("actions");
       const printLink = document.createElement("a");
-      var pageURL = "https://tracking.quickkship.com/shipment-label?orderid="+data.oredrid+"&date="+estimatedDeliveryDate.toLocaleDateString("en-US", { month: 'short', day: 'numeric', year: 'numeric' })+"&dimension="+data.packageDimensions+"&to="+data.recipentName+"&location="+data.address+"&tracking="+data.orderID+"&quantity="+data.quantity;
+      var pageURL = "https://quickkship.com/shipment-label?orderid="+data.oredrid+"&date="+estimatedDeliveryDate.toLocaleDateString("en-US", { month: 'short', day: 'numeric', year: 'numeric' })+"&dimension="+data.packageDimensions+"&to="+data.recipentName+"&location="+data.address+"&tracking="+data.orderID+"&quantity="+data.quantity;
           // Separate the domain from the rest of the URL
         var parts = pageURL.split("//");
         var domain = parts[0] + "//" + parts[1].split("/")[0];
